@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
   <style>
     body {
       font-family: 'Noto Sans', sans-serif;
@@ -21,6 +22,9 @@
       text-indent: 101%;
       overflow:hidden;
       white-space: nowrap;
+    }
+    .info:hover {
+      transform: translate(-2px, -2px);
     }
   </style>
 </head>
@@ -37,7 +41,7 @@
             <a class="nav-link mx-2 active" aria-current="page" href="index.html">首頁</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2" href="index.html">服務介紹</a>
+            <a class="nav-link mx-2" href="index.html#about">服務介紹</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-2" href="plans.html">方案費用</a>
@@ -46,7 +50,7 @@
             <a class="nav-link mx-2" href="question.html">常見問題</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-warning link-primary" href="plans.html">立即訂購</a>
+            <a class="btn btn-warning link-primary hvr-bounce-in" href="plans.html">立即訂購</a>
           </li>      
         </ul>
       </div>
@@ -126,7 +130,7 @@
               <textarea class="form-control" id="formControlTextarea" rows="3"></textarea>
             </div>
           </div>
-          <button type="submit" class="btn btn-warning w-100 mt-4 mb-md-5">選擇方案</button>
+          <button type="submit" class="btn btn-warning w-100 mt-4 mb-md-5 hvr-shrink">選擇方案</button>
         </from>
       </div>
     </div>
@@ -136,21 +140,21 @@
     <div class="container">
       <h2 class="text-center mb-4 fw-bold">需要其他協助嗎？</h2>
       <div class="row g-3 justify-content-center">
-        <div class="col-lg-3 col-8">
+        <div class="col-lg-3 col-8 info">
           <div class="card border-0 shadow-sm">
             <a href="#" class="card-body text-center text-secondary text-decoration-none">
               <i class="bi bi-telephone-fill text-warning"></i> 02-345-678
             </a>
           </div>
         </div>
-        <div class="col-lg-3 col-8">
+        <div class="col-lg-3 col-8 info">
           <div class="card border-0 shadow-sm">
             <a href="#" class="card-body text-center text-secondary text-decoration-none">
               <i class="bi bi-facebook text-warning"></i> 料理魔法師
             </a>
           </div>
         </div>
-        <div class="col-lg-3 col-8">
+        <div class="col-lg-3 col-8 info">
           <div class="card border-0 shadow-sm">
             <a href="question.html" class="card-body text-center text-secondary text-decoration-none">
               <i class="bi bi-question-lg text-warning"></i> 常見問題
